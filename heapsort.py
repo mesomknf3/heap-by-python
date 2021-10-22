@@ -14,11 +14,11 @@ def heapify(arr, n, i):
 
 	# See if right child of root exists and is
 	# greater than root
-	if r < n and arr[largest] < arr[r]:
+	elif r < n and arr[largest] < arr[r]:
 		largest = r
 
 	# Change root, if needed
-	if largest != i:
+	elif largest != i:
 		arr[i],arr[largest] = arr[largest],arr[i] # swap
 
 		# Heapify the root.
